@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lista2Ex11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double p1;
+            double p2;
+            
+            Console.WriteLine("\n---------Exercício 11 da Lista 2---------\n");
+
+            Console.Write("Informe a Nota da P1: ");
+            p1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("");
+
+            p2 = (15 - (p1)) / 2;
+
+            Console.WriteLine("O Aluno Precisa Tirar no Minimo {0} na P2 para ser Aprovado.", p2);
+        }
+    }
+}
