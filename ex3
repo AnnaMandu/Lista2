@@ -1,0 +1,103 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lista2Ex3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double v1;
+            double v2;
+            double v3;
+
+            Console.WriteLine("\n---------Exercício 3 da Lista 2---------\n");
+
+            Console.Write("Digite o Primeiro Valor: ");
+            v1 = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Segundo Valor: ");
+            v2 = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Terceiro Valor: ");
+            v3 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("");
+
+            if (v1 == v2)
+            { 
+                if(v1==v3)
+                {
+                    Console.WriteLine("Valores Idênticos");
+                }
+                else
+                {
+                    if (v1 > v3)
+                    {
+                        Console.WriteLine("O 1° e o 2° Valor São os Maiores");
+                    }
+                    else
+                    {
+                        Console.WriteLine("O Maior é 3° Valor");
+                    }
+                }
+            }
+            else
+            {
+                if (v1 == v3)
+                {
+                    if (v1 > v2)
+                    {
+                        Console.WriteLine("O 1° e o 3° Valor São os Maiores");
+                    }
+                    else
+                    {
+                        Console.WriteLine("O Maior é 2° Valor");
+                    }
+                }
+                else
+                {
+                    if(v2 == v3)
+                    {
+                        if(v2 > v1)
+                        {
+                            Console.WriteLine("O 2° e o 3° Valor São os Maiores");
+                        }
+                        else
+                        {
+                            Console.WriteLine("O Maior é 1° Valor");
+                        }
+                    }
+                    else
+                    {
+                        if (v1 > v2)
+                        {
+                            if (v1 > v3)
+                            {
+                                Console.WriteLine("O Maior é 1° Valor");
+                            }
+                            else
+                            {
+                                Console.WriteLine("O Maior é 2° Valor");
+                            }
+                        }
+                        else
+                        {
+                            if (v2 > v3)
+                            {
+                                Console.WriteLine("O Maior é 2° Valor");
+                            }
+                            else
+                            {
+                                Console.WriteLine("O Maior é 3° Valor");
+                            }
+                        }
+                    }
+                }
+            }           
+        }
+    }
+}
