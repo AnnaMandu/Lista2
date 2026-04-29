@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lista2Ex6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double peso;
+            double altura;
+            double relacaoPesoAltura;
+
+            Console.WriteLine("\n---------Exercício 6 da Lista 2---------\n");
+
+            Console.Write("Informe o Peso (Kg): ");
+            peso = double.Parse(Console.ReadLine());
+
+            Console.Write("Informe a altura (m): ");
+            altura = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("");
+
+            relacaoPesoAltura = peso / Math.Pow(altura, 2);
+
+            if (relacaoPesoAltura < 20)
+            {
+                Console.WriteLine("Abaixo do Peso");
+            }
+            else
+            {
+                if (relacaoPesoAltura < 25)
+                {
+                    Console.WriteLine("Peso Ideal");
+                }
+                else
+                {
+                    Console.WriteLine("Acima do Peso");               
+                }
+            }
+        }
+    }
+}
