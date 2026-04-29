@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lista2Ex2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double valor1;
+            double valor2;
+
+            Console.WriteLine("\n---------Exercício 2 da Lista 2---------\n");
+
+            Console.Write("Digite o Primeiro Valor: ");
+            valor1 = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Segundo Valor: ");
+            valor2 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("");
+
+            if (valor1 == valor2)
+            {
+                Console.WriteLine("Valores Idênticos");
+            }
+            else
+            {
+                if (valor1 > valor2)
+                {
+                    Console.WriteLine("O Primeiro Valor é o Maior");
+                }
+                else
+                {
+                    Console.WriteLine("O Segundo Valor é o Maior");
+                }
+            }
+        }
+    }
+}
