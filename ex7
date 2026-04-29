@@ -1,0 +1,82 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lista2Ex7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double v1;
+            double v2;
+            double v3;
+            
+            Console.WriteLine("\n---------Exercício 7 da Lista 2---------\n");
+
+            Console.Write("Digite o 1º Valor: ");
+            v1 = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o 2º Valor: ");
+            v2 = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o 3º Valor: ");
+            v3 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("");
+
+            if ((v1 + v2) > v3)
+            {
+                if ((v2 + v3) > v1)
+                {
+                    if ((v1 + v3) > v2)
+                    {
+                        if (v1 == v2)
+                        {
+                            if (v2 == v3)
+                            {
+                                Console.WriteLine("Triângulo Equilatero");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Triângulo Isósceles");
+                            }
+                        }
+                        else
+                        {
+                            if(v1 == v3)
+                            {
+                                Console.WriteLine("Triângulo Isósceles");
+                            }
+                            else
+                            {
+                                if (v2 == v3)
+                                {
+                                    Console.WriteLine("Triângulo Isósceles");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Triângulo Escaleno");
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Não Formam um Triângulo");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Não Formam um Triângulo");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Não Formam um Triângulo");
+            }
+        }
+    }
+}
